@@ -17,4 +17,13 @@ class User:
         self.username = username
         self.password = password
 
+    def save_user(self):
+
+
+        '''
+        save_uer method saves user objects into user_list
+        '''
+
+        User.User_list.append(self)    
+
     
