@@ -1,5 +1,5 @@
 #  project name:
-PASSWORD-LOCKER
+PASS_LOCK
 
 
 # AUTHOR
@@ -13,7 +13,7 @@ For the application to run, you have to install:
 -pip
 
 - open terminal
-- git clone this repository 
+- git clone this repository https://github.com/Edwike12/Pass_Lock
 - open Password-Locker directory
 - use a code editor
 
