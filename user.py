@@ -1,9 +1,11 @@
+from credentials import Credentials
+
 class User:
     """
     Class that generates new instances of users
     """
 
-    User_list = [] # Empty User list
+    User_list = []  # Empty User list
 
     def __init__(self, username, password):
         '''
@@ -12,24 +14,21 @@ class User:
         Args:
             username: new_user username.
             password: new_user password.
-            
+
             '''
         self.username = username
         self.password = password
 
     def save_user(self):
-
-
         '''
         save_uer method saves user objects into user_list
         '''
 
-        User.User_list.append(self)   
+        User.User_list.append(self)
 
-    def delete_user(self):
-        '''
-        delete_account method deletes a  saved account from the list
-        '''
-        User.User_list.remove(self)         
-
-    
+    @classmethod
+    def display_user(cls):
+        """
+        The class array is returned by this function.
+        """
+        return cls.user_array
